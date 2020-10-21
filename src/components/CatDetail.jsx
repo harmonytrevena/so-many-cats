@@ -34,11 +34,6 @@ const Ul = styled.ul`
     list-style-type: none;
 `;
 
-const Box = styled.div`
-    list-style-type: none;
-`;
-
-
 // Functional Component Starts Here
 
 const CatDetail = ({ cat, setActivity }) => {
@@ -46,7 +41,6 @@ const CatDetail = ({ cat, setActivity }) => {
   return (
     <Container>
         <Ul>
-          <Box>
             <li>
                 {name} is currently {activity}. What's next?
                 <br />
@@ -61,7 +55,6 @@ const CatDetail = ({ cat, setActivity }) => {
                 </Button>
             </li>
             <br />
-          </Box>
         </Ul>
     </Container>
   );
